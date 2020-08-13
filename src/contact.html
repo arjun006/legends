@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+
+    <title>Legends ~ Sports Apparel</title>
+  </head>
+  <body>
+    <nav>
+      <img src="images/logo-1.png" alt="logo" class="logo" />
+    </nav>
+    <!-- Menu Option buttons -->
+    <div class="category-btn">
+      <ul class="category-ul">
+        <li id="home"><a href="index.html">Home</a></li>
+        <li id="all"><a href="index.html">All Legends</a></li>
+        <li id="nba"><a href="index.html">NBA Legends</a></li>
+        <li id="nhl"><a href="index.html">NHL Legends</a></li>
+        <li id="soccer"><a href="index.html">Soccer Legends</a></li>
+        <a href="contact.html">
+          <li id="contact">Contact</li>
+        </a>
+      </ul>
+    </div>
+    <div class="banner">Contact Us</div>
+    <div class="form-container">
+      <form
+        name="contact"
+        action=" https://httpbin.org/post"
+        method="POST"
+        onsubmit="return validate()"
+      >
+        <div class="form-input">
+          <label for="name">Name: </label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" />
+        </div>
+        <div class="form-input">
+          <label for="email">Email: </label>
+          <input type="text" id="email" name="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-input">
+          <label for="address">Address: </label>
+          <input type="text" id="address" name="address" placeholder="Enter adress" />
+        </div>
+        <div class="form-input">
+          <label for="city">City: </label>
+          <input type="text" id="city" name="city" placeholder="Enter your city..." />
+        </div>
+        <div class="form-input">
+          <label for="postal">Postal Code: </label>
+          <input type="text" id="postal" name="postal" placeholder="Enter your postal code" />
+        </div>
+        <div class="form-input">
+          <label for="question">Question</label>
+          <input type="radio" id="question" name="question" value="question" />
+          <label for="comment">Comment</label>
+          <input type="radio" id="comment" name="comment" value="comment" />
+
+          <label for="order">Order Problem</label>
+        </div>
+
+        <div class="form-input order">
+          <label for="order-num">Order Number</label>
+          <input type="text" id="order-num" name="order-num" placeholder="Enter Order Number" />
+        </div>
+        <div class="form-input">
+          <label for="message">Message</label>
+          <br />
+          <input type="text" id="message" name="message" placeholder="Enter your message..." />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
